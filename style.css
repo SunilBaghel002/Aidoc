@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0px 30px 0px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title h1 {
+    font-size: 38px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(75, 165, 75);
+    text-shadow: 2px 2px green;
+}
+
+.title img {
+    width: 40px;
+    height: 40px;
+}
+
+.services {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.services a {
+    text-decoration: none;
+    color: green;
+    font-weight: 600;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.loading button {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.loading .signinBtn {
+    background-color: rgb(55, 163, 55);
+    color: rgb(228, 224, 224);
+}
+
+.loading .loginBtn {
+    color: rgb(55, 163, 55);
+    background-color: rgb(228, 224, 224);
+}
+
+.signinBtn:hover {
+    background-color: rgb(89, 175, 89);
+    /* color: rgb(168, 168, 168); */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.562);
+}
+
+.loginBtn:hover {
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.562);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing {
+    width: fit-content;
+    height: fit-content;
+    animation-name: typing;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(70, end);
+}
+
+.typing h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 40px;
+}
+
+.typing h1 span {
+    font-size: 44px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(75, 165, 75);
+    text-shadow: 2px 2px green;
+}
+.container{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Roboto", sans-serif;
+}
+.card{
+    max-width: 600px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 50px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.chat{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.remind{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.box a{
+    text-decoration: none;
+    color: rgb(116, 187, 116);
+}
+
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
